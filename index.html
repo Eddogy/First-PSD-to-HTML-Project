@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----------Bootstrap------------ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- ----------Style.css------------ -->
+    <link rel="stylesheet" href="/style.css" />
+    <title>First PSD to HTML Project</title>
+  </head>
+  <body
+    data-spy="scroll"
+    data-bs-target="#scrollspy"
+    data-bs-offset="0"
+    tabindex="0"
+    style="position: relative;"
+  >
+    <!-- ------------------------------- -->
+    <section id="hero">
+      <div class="hero-container">
+        <div class="logo">
+          <!-- Uncomment for logo picture  -->
+          <!-- <a href="#"><img src="/img/logo.png" alt="Logo"></a>  -->
+          <p class="two-bytes">two<span>bytes</span></p>
+          <p class="consulting">consulting</p>
+        </div>
+        <div class="line"></div>
+        <nav class="navbar" id="scrollspy">
+          <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recruitment">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Employers</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <form class="hero-form" id="home">
+          <label for="search">I'm looking for..</label>
+          <div class="search_and_button_container">
+            <input
+              type="text"
+              id="search-field"
+              name="search"
+              placeholder="Enter a Job Description"
+            />
+            <button class="search-button" type="submit">
+              <img src="img/search-icon.png" class="search-icon" />Search
+            </button>
+          </div>
+          <div class="checkbox_and_location_container">
+            <label class="checkbox-container">
+              <input type="checkbox" checked="checked" />
+              Full Time
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" />
+              Part Time / Casual / Freelance
+              <span class="checkmark"></span>
+            </label>
+            <select
+              id="sel"
+              onclick="document.getElementById('sel').style.color='#585858';"
+            >
+              <option value="location" selected disabled hidden>
+                Select your location
+              </option>
+              <option value="kaunas">Kaunas</option>
+              <option value="vilnius">Vilnius</option>
+              <option value="palanga">Palanga</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- ------------------------------- -->
+    <section id="recruitment">
+      <img class="dashed-line" src="/img/dashed-line.png" alt="dashed-line" />
+      <div class="recruitment-container">
+        <h4>We’re leaders in</h4>
+        <h1>Creative Digital Recruitment</h1>
+        <h6>
+          Based in Surry Hills, the creative hub of Sydney we are surrounded by
+          creativity and that reflects on the type of jobs we recruit for.
+        </h6>
+        <div class="recruitment-link">
+          <a href="#">Find out more about us!</a>
+        </div>
+      </div>
+      <img class="dashed-line" src="/img/dashed-line.png" alt="dashed-line" />
+    </section>
+    <!-- ------------------------------- -->
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Subscribe to our Job Seeker Mailing List</h2>
+        <div class="email-container">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email Address"
+          />
+          <button type="submit" class="email-button">
+            <img class="mail-icon-1" src="/img/mail-icon-1.png" alt="mail-1" />
+          </button>
+        </div>
+      </div>
+      <img class="dashed-line" src="/img/dashed-line.png" alt="dashed-line" />
+    </section>
+    <!-- ------------------------------- -->
+    <footer id="footer">
+      <div class="footer-container">
+        <img class="mail-icon-2" src="/img/mail-icon-2.png" alt="" />
+        <a class="company-email" href="mailto:hello@twobytes.com.au"
+          >hello@twobytes.com.au</a
+        >
+        <div class="paragraph_and_social_media_container">
+          <p>
+            Copyright © 2014 Two Bytes Consulting.
+            <span>Terms & Policies. </span>
+          </p>
+          <div class="facebook_and_twitter_container">
+            <button type="submit" class="twitterButton">
+              <img class="twitter" src="/img/twitter.png" alt="Twitter" />
+            </button>
+            <button type="submit" class="facebookButton">
+              <img class="facebook" src="/img/facebook.png" alt="Facebook" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
