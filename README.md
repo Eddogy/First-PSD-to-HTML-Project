@@ -1,5 +1,5 @@
 # First-PSD-to-HTML-Project
-My very first psd to html project.
+My very first PSD to HTML project.
 
 Assigned by Kaunas Information Technology School.
 Because it was my first time doing something like this,
